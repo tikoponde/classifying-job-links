@@ -1,0 +1,38 @@
+# classifying-job-links
+
+Motivation:
+
+I want to scrape job postings from any given website with a generic algorithm, so I will be able to monitor new job openings directly from the source, i.e. employeers websites.
+Since every website will have a different HTML "style" and job titles varies a lot, I decided to build a ML model to classify the scraped links that are job postings.
+
+Files:
+
+Input:
+
+'inputCompanies - js rendered.csv' -> list of companies and URLs to scrape.
+
+Scraping:
+
+1 - 'html_scrape.py' -> scrapes HTML rendered websites (requests, beautifulsoup, pandas, numpy).
+2 - 'js_scrape.py' -> scrapes JavaScript rendered websites (selenium, beautifulsoup, pandas, numpy).
+3 - 'FJGH EDA.ipynb' -> Data cleaning, Exploratory Data Analysis and Feature Engineering (seaborn, sklearb, pandas, numpy, matpyplot).
+4 - 'ML_Link_Classifier .ipynb' -> Machine learning model. (sklearn, pandas, numpy)
+
+Connection between files:
+
+All those files are "conected" by their output, i.e. the out put of 1 and 2 will be the input for 3, and the output of 3 will be the input for 4.
+
+Next steps
+
+Get more data:
+- Create a generic as possible function to iterate pages of JS rendered websites.
+
+Tolkenize:
+- Adjust the model to use the tolkenized dataset as input
+
+Acknowledgements:
+Pedro Monteiro for helping me with statistical concepts and ideas to improve the model. (https://www.linkedin.com/in/pedro-monteiro-05206722/)
+Lorena Cunha for helping me reviewing my work. (https://www.linkedin.com/in/lorenapcunha/)
+Ken Jee for your free content that helped me structure this project. (https://www.youtube.com/channel/UCiT9RITQ9PW6BhXK0y2jaeg)
+Tim for your tutorials on Selenium. (https://www.youtube.com/c/TechWithTim)
+All the community. I would not pull this out without the infit detailed explanations on stackoverflow and other sources.
