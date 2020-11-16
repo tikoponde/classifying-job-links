@@ -1,9 +1,9 @@
 # classifying-job-links
 
-Motivation:
-
+<b>Motivation:</b> <br>
+<br>
 I want to scrape job postings from any given website with a generic algorithm, so I will be able to monitor new job openings directly from the source, i.e. employeers websites.
-Since every website will have a different HTML "style" and job titles varies a lot, I decided to build a ML model to classify the scraped links that are job postings.
+Since every website will have a different HTML "style" and job titles varies a lot, I decided to build a ML model to classify the scraped links that are job postings.<br>
 <br>
 <b>Files:</b><br>
 <br>
