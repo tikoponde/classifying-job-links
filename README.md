@@ -4,35 +4,35 @@ Motivation:
 
 I want to scrape job postings from any given website with a generic algorithm, so I will be able to monitor new job openings directly from the source, i.e. employeers websites.
 Since every website will have a different HTML "style" and job titles varies a lot, I decided to build a ML model to classify the scraped links that are job postings.
-
-Files:
-
-Input:
-
+<br>
+<b>Files:</b>
+<br>
+<b>Input:</b>
+<br>
 'inputCompanies - js rendered.csv' -> list of companies and URLs to scrape.
-
-Scraping:
-
-1 - 'html_scrape.py' -> scrapes HTML rendered websites (requests, beautifulsoup, pandas, numpy).
-2 - 'js_scrape.py' -> scrapes JavaScript rendered websites (selenium, beautifulsoup, pandas, numpy).
-3 - 'FJGH EDA.ipynb' -> Data cleaning, Exploratory Data Analysis and Feature Engineering (seaborn, sklearb, pandas, numpy, matpyplot).
-4 - 'ML_Link_Classifier .ipynb' -> Machine learning model. (sklearn, pandas, numpy)
-
-Connection between files:
-
+<br>
+<b>Scraping:</b>
+<br>
+1 - 'html_scrape.py' -> scrapes HTML rendered websites (requests, beautifulsoup, pandas, numpy).<br>
+2 - 'js_scrape.py' -> scrapes JavaScript rendered websites (selenium, beautifulsoup, pandas, numpy).<br>
+3 - 'FJGH EDA.ipynb' -> Data cleaning, Exploratory Data Analysis and Feature Engineering (seaborn, sklearb, pandas, numpy, matpyplot).<br>
+4 - 'ML_Link_Classifier .ipynb' -> Machine learning model. (sklearn, pandas, numpy)<br>
+<br>
+<b>Connection between files:</b>
+<br>
 All those files are "conected" by their output, i.e. the out put of 1 and 2 will be the input for 3, and the output of 3 will be the input for 4.
-
-Next steps
-
+<br>
+<b>Next steps</b>
+<br>
 Get more data:
 - Create a generic as possible function to iterate pages of JS rendered websites.
-
+<br>
 Tolkenize:
 - Adjust the model to use the tolkenized dataset as input
-
-Acknowledgements:
-Pedro Monteiro for helping me with statistical concepts and ideas to improve the model. (https://www.linkedin.com/in/pedro-monteiro-05206722/)
-Lorena Cunha for helping me reviewing my work. (https://www.linkedin.com/in/lorenapcunha/)
-Ken Jee for your free content that helped me structure this project. (https://www.youtube.com/channel/UCiT9RITQ9PW6BhXK0y2jaeg)
-Tim for your tutorials on Selenium. (https://www.youtube.com/c/TechWithTim)
-All the community. I would not pull this out without the infit detailed explanations on stackoverflow and other sources.
+<br>
+<b>Acknowledgements:</b>
+Pedro Monteiro for helping me with statistical concepts and ideas to improve the model. (https://www.linkedin.com/in/pedro-monteiro-05206722/) <br>
+Lorena Cunha for helping me reviewing my work. (https://www.linkedin.com/in/lorenapcunha/) <br>
+Ken Jee for your free content that helped me structure this project. (https://www.youtube.com/channel/UCiT9RITQ9PW6BhXK0y2jaeg) <br>
+Tim for your tutorials on Selenium. (https://www.youtube.com/c/TechWithTim) <br>
+All the community. I would not pull this out without the infit detailed explanations on stackoverflow and other sources. 
