@@ -30,9 +30,3 @@ Get more data:<br>
 Tolkenize:<br>
 - Adjust the model to use the tolkenized dataset as input<br>
 <br>
-<b>Acknowledgements:</b>
-Pedro Monteiro for helping me with statistical concepts and ideas to improve the model. (https://www.linkedin.com/in/pedro-monteiro-05206722/) <br>
-Lorena Cunha for helping me reviewing my work. (https://www.linkedin.com/in/lorenapcunha/) <br>
-Ken Jee for your free content that helped me structure this project. (https://www.youtube.com/channel/UCiT9RITQ9PW6BhXK0y2jaeg) <br>
-Tim for your tutorials on Selenium. (https://www.youtube.com/c/TechWithTim) <br>
-All the community. I would not pull this out without the infit detailed explanations on stackoverflow and other sources. 
