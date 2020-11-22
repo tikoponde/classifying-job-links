@@ -36,15 +36,11 @@ Built two web scrapers, one using requests and another one using selenium (to sc
 
 <h2>Exploratory Data Analysis</h2><br>
 Checked the distribution of the data, evaluated correlation and did a feature selection using "feature imporance" from Random Forest Classifier.
-<img src="https://github.com/tikoponde/classifying-job-links/blob/master/boxplot_len_atagcontent.JPG" alt="BoxPlot" width="500" height="600">
-
-![alt text][boxplot]
-![alt text][heatmap]
-![alt text][importance]
-
-[boxplot]: (https://github.com/tikoponde/classifying-job-links/blob/master/boxplot_len_atagcontent.JPG "Boxplot")
-[heatmap]: (https://github.com/tikoponde/classifying-job-links/blob/master/heatmap_corr.JPG "Heatmap")
-[importance]: (https://github.com/tikoponde/classifying-job-links/blob/master/random_feature.JPG "Random cut")
+<div>
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/boxplot_len_atagcontent.JPG" alt="BoxPlot" width="300" height="300">
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/heatmap_corr.JPG" alt="Heatmap" width="300" height="300">
+</div>
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/random_feature.JPG" alt="Importance" width="300" height="300">
   
 <b>Motivation:</b> <br>
 <br>
