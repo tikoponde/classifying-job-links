@@ -2,7 +2,7 @@
 
 <h1>Data Science Job Link Classifier: Project Overview</h1><br>
 <ul>
-  <li>Created a tool that classifys scrapped website links into Job Postings (96% accurracy) to enable a bot scrape job postings from any give website.</li>
+  <li>Created a tool that classifies if a website link is a Job Posting (96% accurracy) to enable a bot to scrape job postings from any given website.</li>
   <li>Scraped over 6000 job postings from the website of 30 employers in Canada.</li>
   <li>Engineered features using the information present in the 'a' element tag, such as keys, attributes and text.</li>
   <li>Optimized Random Forest, Logistic Regression, K-Nearest Neighbors and SVM using GridsearchCV.</li>
@@ -59,5 +59,13 @@ Tried 4 different models as estimators and built a stacking:
 Random Forest had the best performance reaching a accurracy of 96,2% vs 96% from Stacking. Anyway, the latter has a better generalization, as we can see in the second image.
 <img src="https://github.com/tikoponde/classifying-job-links/blob/master/model_performance.PNG" alt="performance" width="400" height="270">
 
-<img src="https://github.com/tikoponde/classifying-job-links/blob/master/acc_by_comp.PNG" alt="performance" width="400" height="270">
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/acc_by_comp.PNG" alt="performance" width="400" height="270"><br>
+<br>
+<h3>Contributors and acknowledgments</h3>
+<br>
+<b>Contributor: </b>Pedro Monteiro (https://www.linkedin.com/in/pedro-monteiro-05206722/)<br>
+Special thanks to Ken Jee for all the content provided on your youtube channel (https://www.youtube.com/channel/UCiT9RITQ9PW6BhXK0y2jaeg)<br>
+Also thanks to Tim for the Selenium tutorial (https://www.youtube.com/c/TechWithTim)<br>
+
+  
 
