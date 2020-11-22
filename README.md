@@ -13,7 +13,7 @@
 <b>Python Version: </b>3.8<br>
 <b>Packages: </b>pandas, numpy, sklearn, requests, re, matplotlib, seaborn, selenium, beautifulsoup, pickle, datetime, time<br>
 <b>Stacking walk-through: </b> <a href:"https://machinelearningmastery.com/stacking-ensemble-machine-learning-with-python/">https://machinelearningmastery.com/stacking-ensemble-machine-learning-with-python/</a><br>
-<b>Documentation: </b> <a href:https://github.com/PlayingNumbers/ds_salary_proj">https://github.com/PlayingNumbers/ds_salary_proj</a><br>
+<b>Documentation: </b> <a href:"https://github.com/PlayingNumbers/ds_salary_proj">https://github.com/PlayingNumbers/ds_salary_proj</a><br>
 
 <h2>Web Scraping</h2><br>.
 Built two web scrapers, one using requests and another one using selenium (to scrape js rendered websites). From each /careers website all 'a' tag elements were scraped.<br>
@@ -36,6 +36,8 @@ Built two web scrapers, one using requests and another one using selenium (to sc
 
 <h2>Exploratory Data Analysis</h2><br>
 Checked the distribution of the data, evaluated correlation and did a feature selection using "feature imporance" from Random Forest Classifier.
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/boxplot_len_atagcontent.JPG" alt="BoxPlot" width="500" height="600">
+
 ![alt text][boxplot]
 ![alt text][heatmap]
 ![alt text][importance]
