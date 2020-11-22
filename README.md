@@ -1,5 +1,14 @@
 # classifying-job-links
 
+<h1>Data Science Job Link Classifier: Project Overview</h1><br>
+<ul>
+  <li>Created a tool that classifys scrapped website links into Job Postings (96% accurracy) to enable a bot scrape job postings from any give website.</li>
+  <li>Scraped over 6000 job postings from the website of 30 employers in Canada.</li>
+  <li>Engineered features using the information present in the 'a' element tag, such as keys, attributes and text.</li>
+  <li>Optimized Random Forest, Logistic Regression, K-Nearest Neighbors and SVM using GridsearchCV.</li>
+  <li>Built a Stack model.</li>
+ </ul>
+
 <b>Motivation:</b> <br>
 <br>
 I want to scrape job postings from any given website with a generic algorithm, so I will be able to monitor new job openings directly from the source, i.e. employeers websites.
