@@ -9,6 +9,39 @@
   <li>Built a Stack model.</li>
  </ul>
 
+<h2>Code and Resources Used</h2><br>
+<b>Python Version: </b>3.8<br>
+<b>Packages: </b>pandas, numpy, sklearn, requests, re, matplotlib, seaborn, selenium, beautifulsoup, pickle, datetime, time<br>
+<b>Stacking walk-through: </b> <a href:"https://machinelearningmastery.com/stacking-ensemble-machine-learning-with-python/">https://machinelearningmastery.com/stacking-ensemble-machine-learning-with-python/</a><br>
+<b>Documentation: </b> <a href:"https://github.com/PlayingNumbers/ds_salary_proj">https://github.com/PlayingNumbers/ds_salary_proj</a><br>
+
+<h2>Web Scraping</h2><br>.
+Built two web scrapers, one using requests and another one using selenium (to scrape js rendered websites). From each /careers website all 'a' tag elements were scraped.<br>
+<ul>
+  <li>Scraped the entire 'a' element tag.</li>
+  <li>Scraped all keys from each 'a' element tag.</li>
+  <li>Scraped all attributes from each 'a' element tag.</li>
+  <li>Scraped the text from each 'a' element tag</li>
+ </ul>
+
+<h2>Data Cleaning and Feature Engineering</h2><br>
+<ul>
+  <li>Handled rows with null values.</li>
+  <li>Made columns for length of text and href and grouped them.</li>
+  <li>Made columns for the number of keys.</li>
+  <li>Made columns for rows that contained job keywords on keys and attributes.</li>
+  <li>Normalized feature values, when necessary, using QuantileTransformer to deal with outliers.</li>
+  <li>Cleaned special characters and extracted any duplicated info present in different columns.</li>
+ </ul>
+
+<h2>Exploratory Data Analysis</h2><br>
+Checked the distribution of the data, evaluated correlation and did a feature selection using "feature imporance" from Random Forest Classifier.
+<div>
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/boxplot_len_atagcontent.JPG" alt="BoxPlot" width="300" height="300">
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/heatmap_corr.JPG" alt="Heatmap" width="300" height="300">
+</div>
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/random_feature.JPG" alt="Importance" width="300" height="300">
+  
 <b>Motivation:</b> <br>
 <br>
 I want to scrape job postings from any given website with a generic algorithm, so I will be able to monitor new job openings directly from the source, i.e. employeers websites.
