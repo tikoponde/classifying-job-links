@@ -38,10 +38,10 @@ Built two web scrapers, one using requests and another one using selenium (to sc
 <h2>Exploratory Data Analysis</h2><br>
 Checked the distribution of the data, evaluated correlation and did a feature selection using "feature imporance" from Random Forest Classifier.<br>
 <div>
-<img src="https://github.com/tikoponde/classifying-job-links/blob/master/boxplot_len_atagcontent.JPG" alt="BoxPlot" width="300" height="300">
-<img src="https://github.com/tikoponde/classifying-job-links/blob/master/heatmap_corr.JPG" alt="Heatmap" width="400" height="400">
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/images/boxplot_len_atagcontent.JPG" alt="BoxPlot" width="300" height="300">
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/images/heatmap_corr.JPG" alt="Heatmap" width="400" height="400">
 </div>
-<img src="https://github.com/tikoponde/classifying-job-links/blob/master/random_feature.JPG" alt="Importance" width="200" height="300">
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/images/random_feature.JPG" alt="Importance" width="200" height="300">
 
 <h2>Model Building</h2>
 Splited the train and test dataset with a test size of 30%.<br>
@@ -57,9 +57,9 @@ Tried 4 different models as estimators and built a stacking:
 
 <h2>Model Performance</h2>
 Random Forest had the best performance reaching a accurracy of 96,2% vs 96% from Stacking. Anyway, the latter has a better generalization, as we can see in the second image.
-<img src="https://github.com/tikoponde/classifying-job-links/blob/master/model_performance.PNG" alt="performance" width="400" height="270">
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/images/model_performance.PNG" alt="performance" width="400" height="270">
 
-<img src="https://github.com/tikoponde/classifying-job-links/blob/master/acc_by_comp.PNG" alt="performance" width="400" height="270"><br>
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/images/acc_by_comp.PNG" alt="performance" width="400" height="270"><br>
 <br>
 <h3>Contributors and acknowledgments</h3>
 <br>
