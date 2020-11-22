@@ -32,43 +32,32 @@ Built two web scrapers, one using requests and another one using selenium (to sc
   <li>Made columns for rows that contained job keywords on keys and attributes.</li>
   <li>Normalized feature values, when necessary, using QuantileTransformer to deal with outliers.</li>
   <li>Cleaned special characters and extracted any duplicated info present in different columns.</li>
+  <li>Transformed the categorical variables into dummy variables.</li>
  </ul>
 
 <h2>Exploratory Data Analysis</h2><br>
-Checked the distribution of the data, evaluated correlation and did a feature selection using "feature imporance" from Random Forest Classifier.
+Checked the distribution of the data, evaluated correlation and did a feature selection using "feature imporance" from Random Forest Classifier.<br>
 <div>
 <img src="https://github.com/tikoponde/classifying-job-links/blob/master/boxplot_len_atagcontent.JPG" alt="BoxPlot" width="300" height="300">
-<img src="https://github.com/tikoponde/classifying-job-links/blob/master/heatmap_corr.JPG" alt="Heatmap" width="300" height="300">
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/heatmap_corr.JPG" alt="Heatmap" width="400" height="400">
 </div>
-<img src="https://github.com/tikoponde/classifying-job-links/blob/master/random_feature.JPG" alt="Importance" width="300" height="300">
-  
-<b>Motivation:</b> <br>
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/random_feature.JPG" alt="Importance" width="200" height="300">
+
+<h2>Model Building</h2>
+Splited the train and test dataset with a test size of 30%.<br>
 <br>
-I want to scrape job postings from any given website with a generic algorithm, so I will be able to monitor new job openings directly from the source, i.e. employeers websites.
-Since every website will have a different HTML "style" and job titles varies a lot, I decided to build a ML model to classify the scraped links that are job postings.<br>
-<br>
-<b>Files:</b><br>
-<br>
-<b>Input:</b><br>
-<br>
-'inputCompanies - js rendered.csv' -> list of companies and URLs to scrape.<br>
-<br>
-<b>Scraping:</b><br>
-<br>
-1 - 'html_scrape.py' -> scrapes HTML rendered websites (requests, beautifulsoup, pandas, numpy).<br>
-2 - 'js_scrape.py' -> scrapes JavaScript rendered websites (selenium, beautifulsoup, pandas, numpy).<br>
-3 - 'FJGH EDA.ipynb' -> Data cleaning, Exploratory Data Analysis and Feature Engineering (seaborn, sklearb, pandas, numpy, matpyplot).<br>
-4 - 'ML_Link_Classifier .ipynb' -> Machine learning model. (sklearn, pandas, numpy)<br>
-<br>
-<b>Connection between files:</b><br>
-<br>
-All those files are "conected" by their output, i.e. the out put of 1 and 2 will be the input for 3, and the output of 3 will be the input for 4.<br>
-<br>
-<b>Next steps</b><br>
-<br>
-Get more data:<br>
-- Create a generic as possible function to iterate pages of JS rendered websites.<br>
-<br>
-Tolkenize:<br>
-- Adjust the model to use the tolkenized dataset as input<br>
-<br>
+Tried 4 different models as estimators and built a stacking:
+<ol>
+  <li><b>Random Forest Classifier: </b>limited maxdepth to keep it from overfitting.</li>
+  <li><b>SVC: </b>accepted higher missclassifications for processing time reasons.</li>
+  <li><b>Logistic Regression: </b>well known model for classification.</li>
+  <li><b>KNN: </b>one of the simplest models for classification, still really effective.</li>
+  <li><b>Stacking: </b>used a logistic regression to combine the proba of the 4 estimators.</li>
+</ol>
+
+<h2>Model Performance</h2>
+Random Forest had the best performance reaching a accurracy of 96,2% vs 96% from Stacking. Anyway, the latter has a better generalization, as we can see in the second image.
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/model_performance.PNG" alt="performance" width="400" height="270">
+
+<img src="https://github.com/tikoponde/classifying-job-links/blob/master/acc_by_comp.PNG" alt="performance" width="400" height="270">
+
