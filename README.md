@@ -12,8 +12,8 @@
 <h2>Code and Resources Used</h2><br>
 <b>Python Version: </b>3.8<br>
 <b>Packages: </b>pandas, numpy, sklearn, requests, re, matplotlib, seaborn, selenium, beautifulsoup, pickle, datetime, time<br>
-<b>Stacking walk-through: </b> <a href:"https://machinelearningmastery.com/stacking-ensemble-machine-learning-with-python/">https://machinelearningmastery.com/stacking-ensemble-machine-learning-with-python/</a><br>
-<b>Documentation: </b> <a href:"https://github.com/PlayingNumbers/ds_salary_proj">https://github.com/PlayingNumbers/ds_salary_proj</a><br>
+<b>Stacking walk-through: </b> (https://machinelearningmastery.com/stacking-ensemble-machine-learning-with-python/)<br>
+<b>Documentation: </b> https://github.com/PlayingNumbers/ds_salary_proj<br>
 
 <h2>Web Scraping</h2><br>.
 Built two web scrapers, one using requests and another one using selenium (to scrape js rendered websites). From each /careers website all 'a' tag elements were scraped.<br>
