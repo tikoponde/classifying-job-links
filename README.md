@@ -12,7 +12,7 @@
 <h2>Code and Resources Used</h2><br>
 <b>Python Version: </b>3.8<br>
 <b>Packages: </b>pandas, numpy, sklearn, requests, re, matplotlib, seaborn, selenium, beautifulsoup, pickle, datetime, time<br>
-<b>Stacking walk-through: </b> (https://machinelearningmastery.com/stacking-ensemble-machine-learning-with-python/)<br>
+<b>Stacking: </b> (https://machinelearningmastery.com/stacking-ensemble-machine-learning-with-python/)<br>
 <b>Documentation: </b> https://github.com/PlayingNumbers/ds_salary_proj<br>
 
 <h2>Web Scraping</h2><br>.
