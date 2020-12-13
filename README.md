@@ -2,8 +2,8 @@
 
 <h1>Data Science Job Link Classifier: Project Overview</h1><br>
 <ul>
-  <li>Created a tool that classifies if a website link is a Job Posting (96% accurracy) to enable a bot to scrape job postings from any given website.</li>
-  <li>Scraped over 6000 job postings from the website of 30 employers in Canada.</li>
+  <li>Created a tool that classifies if a website link is a Job Posting (97% accurracy) to enable a bot to scrape job postings from any given website.</li>
+  <li>Scraped over 6000 job postings from the website of 68 employers in Canada.</li>
   <li>Engineered features using the information present in the 'a' element tag, such as keys, attributes and text.</li>
   <li>Optimized Random Forest, Logistic Regression, K-Nearest Neighbors and SVM using GridsearchCV.</li>
   <li>Built a Stack model.</li>
@@ -32,6 +32,7 @@ Built two web scrapers, one using requests and another one using selenium (to sc
   <li>Made columns for rows that contained job keywords on keys and attributes.</li>
   <li>Normalized feature values, when necessary, using QuantileTransformer to deal with outliers.</li>
   <li>Cleaned special characters and extracted any duplicated info present in different columns.</li>
+  <li>Created clusters usining tolkens from the 'a' tag by applying the k-means model.</li>
   <li>Transformed the categorical variables into dummy variables.</li>
  </ul>
 
