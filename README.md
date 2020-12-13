@@ -32,6 +32,7 @@ Built two web scrapers, one using requests and another one using selenium (to sc
   <li>Made columns for rows that contained job keywords on keys and attributes.</li>
   <li>Normalized feature values, when necessary, using QuantileTransformer to deal with outliers.</li>
   <li>Cleaned special characters and extracted any duplicated info present in different columns.</li>
+  <li>Created clusters usining tolkens from the 'a' tag by applying the k-means model.</li>
   <li>Transformed the categorical variables into dummy variables.</li>
  </ul>
 
