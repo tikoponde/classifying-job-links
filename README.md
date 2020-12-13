@@ -57,10 +57,9 @@ Tried 4 different models as estimators and built a stacking:
 </ol>
 
 <h2>Model Performance</h2>
-Random Forest had the best performance reaching a accurracy of 96,2% vs 96% from Stacking. Anyway, the latter has a better generalization, as we can see in the second image.
+The final performance achieved was a 97,2% accuracy, using the stack of models.
 <img src="https://github.com/tikoponde/classifying-job-links/blob/master/images/model_performance.PNG" alt="performance" width="400" height="270">
 
-<img src="https://github.com/tikoponde/classifying-job-links/blob/master/images/acc_by_comp.PNG" alt="performance" width="400" height="270"><br>
 <br>
 <h3>Contributors and acknowledgments</h3>
 <br>
